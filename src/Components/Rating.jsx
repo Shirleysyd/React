@@ -34,7 +34,7 @@ const Rating = (props) => {
         ))}
       </div>
       {rating > 0 && (
-        <div className="feedback">
+        <div className="feedback" >
           {feedbackMessages[rating - 1]}
         </div>
       )}
