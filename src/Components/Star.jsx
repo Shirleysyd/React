@@ -11,4 +11,5 @@ const Star = ({ star, rating, hover, onClick, onMouseEnter, onMouseLeave }) => {
   );
 };
 
+
 export default Star;
