@@ -1,9 +1,9 @@
-const Star = ({ star, rating, hover, onClick, onMouseEnter, onMouseLeave }) => {
+const Star = ({ star, rating, hover, ratingClick, ratingMouseEnter, ratingMouseLeave }) => {
   return (
     <span
-      onClick={onClick}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      onClick={()=>ratingClick(star)}
+      onMouseEnter={()=>ratingMouseEnter(star)}
+      onMouseLeave={()=>ratingMouseLeave(star)}
       className={`star ${star <= (hover || rating) ? 'active' : ''}`}
     >
       {'\u2605'}
